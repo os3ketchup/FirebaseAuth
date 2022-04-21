@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SendingCodeFragment">
+    <TextView
+        android:paddingTop="36dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SMS kodni kiriting" />
+    <TextView
+        android:id="@+id/tv_receive_number"
+        android:textSize="18sp"
+        android:textColor="#5E5C5C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bir martalik kod raqamiga yuborildi" />
+
+    <TextView
+        android:id="@+id/tv_timer"
+        android:layout_marginTop="36dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:text="00:"/>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:hint="SMS kod"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_sending_code"
+            android:inputType ="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+   <LinearLayout
+       android:layout_marginTop="12dp"
+       android:orientation="horizontal"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <ImageView
+           android:id="@+id/iv_resend"
+           android:layout_width="50dp"
+           android:layout_height="50dp"
+           android:src="@drawable/ic_auto_renew"/>
+       <TextView
+           android:textSize="18sp"
+            android:layout_gravity="center"
+           android:layout_marginStart="12dp"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:textColor="#20D472"
+           android:text="Kodni qayta olish"/>
+   </LinearLayout>
+
+</LinearLayout>

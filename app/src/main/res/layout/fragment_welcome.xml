@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeFragment">
+
+
+    <TextView
+        android:paddingTop="36dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Assalomu alaykum" />
+    <TextView
+        android:textSize="18sp"
+        android:textColor="#5E5C5C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avtorizatsiyadan o'tish uchun telefon\ntelefon raqamingizni kiriting" />
+<com.google.android.material.textfield.TextInputLayout
+    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+    android:layout_marginTop="36dp"
+    android:hint="Telefon raqamingiz"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/et_phone_number"
+        android:inputType="phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_send_number_next_window"
+        android:layout_marginTop="36dp"
+        android:paddingTop="8dp"
+        android:paddingStart="50dp"
+        android:paddingEnd="50dp"
+        android:paddingBottom="8dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="Kirish"
+        android:backgroundTint="#FCB600"
+        android:textAllCaps="false"/>
+</LinearLayout>

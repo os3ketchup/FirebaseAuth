@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WelcomeFragment">
+
+
+    <TextView
+        android:paddingTop="36dp"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Xush kelibsiz!!!" />
+    <TextView
+        android:id="@+id/tv_number"
+        android:layout_marginTop="48dp"
+        android:textSize="18sp"
+        android:textColor="#5E5C5C"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="(+99894)390-00-57" />
+
+
+
+</LinearLayout>
+
